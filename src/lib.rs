@@ -86,7 +86,6 @@ impl Wallet for TestWallet {
         self.confirmed
     }
 }
-
 pub fn apply_fee(balance: &mut u64, fee: u64) {
     // TODO: Subtract fee from mutable balance reference
     if *balance >= fee {
